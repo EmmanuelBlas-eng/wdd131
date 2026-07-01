@@ -6,6 +6,8 @@
     <title>WDD 131 - Dynamic Web Fundamentals - Emmanuel Blas Roberto</title>
     <meta name="WDD 131 - Dynamic Web Fundamentals - Emmanuel Blas Roberto" content="Home Page">
     <meta name="author" content="Emmanuel Blas Roberto">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
     <header>   
@@ -21,38 +23,55 @@
     </header>
     <main>
         <h1>Emmanuel Blas Roberto</h1>
-            <section  class="card">
-                <h2>About Me</h2>
-                <p>My name is Emmanuel Blas Roberto you can me Emman. I was born in Kalibo, AKlan, Philippines
-                    I am currently working a developer at a private company. I have two daughter the eldest is 4 years old
-                    and the youngest is 1 year old.
-                </p>
-                <img src="images/profile.jpg" alt="Emmanuel Blas Roberto Profile image" width="200">
-                <h3>Republic of the Philippines</h3>
-                <p>The Philippines, officially the Republic of the Philippines,[g] is an archipelagic country in Southeast Asia. 
-                    Located in the western Pacific Ocean, it consists of about 7,641 islands, with a total area of about 300,000 square kilometers, 
-                    which are broadly categorized in three main geographical divisions from north to south: Luzon, Visayas, and Mindanao. 
-                    With a population of over 114 million, it is the world's twelfth-most-populous country.</p>
-                <img src="images/ph-flag.png" alt="Philippine Flag" width="300">
+
+        <section  class="card">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <div class="bio-intro">
+                    <p>My name is Emmanuel Blas Roberto you can call me Emman. I was born in Kalibo, AKlan, Philippines
+                        I am currently working a developer at a private company. I have two daughter the eldest is 4 years old
+                        and the youngest is 1 year old.
+                    </p>
+                    <img src="images/profile.jpg" alt="Emmanuel Blas Roberto Profile image" width="200">
+                </div>
+
                 
-            </section>
-            <section class="card1">
+                <h3>Republic of the Philippines</h3>
+               
+
+                <div class="location-details">
+                    <div class="flag-box">
+                        <img src="images/ph-flag.png" alt="Philippine Flag" width="300">
+                        <p class="flag-caption">Official Flag of the Republic of the Philippines</p>
+                    </div>
+                
+                    <p class="location-text">The Philippines, officially the Republic of the Philippines,[g] is an archipelagic country in Southeast Asia. 
+                        Located in the western Pacific Ocean, it consists of about 7,641 islands, with a total area of about 300,000 square kilometers, 
+                        which are broadly categorized in three main geographical divisions from north to south: Luzon, Visayas, and Mindanao. 
+                        With a population of over 114 million, it is the world's twelfth-most-populous country.</p>
+                </div> 
+            </div>  
+            
+        </section>
+            <section class="card">
                 <h2>Web Dev Resources</h2>
-                <ul>
-                    <li><a href="https://dev.to/">Dev.to Community</a></li>
-                    <li><a href="https://simplabots.com/">Simplabots</a></li>
-                    <li><a href="https://www.w3schools.com/">W3 School</a></li>
-                    <li><a href="https://codepen.io/create">Code Pen</a></li>
-                    <li><a href="https://www.udemy.com/">Udemy</a></li>
-                    <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
-                </ul>
+                <div class="card-body resources-list">
+                    <ul>
+                        <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                        <li><a href="https://simplabots.com/" target="_blank">Simplabots</a></li>
+                        <li><a href="https://www.w3schools.com/" target="_blank">W3 School</a></li>
+                        <li><a href="https://codepen.io/create" target="_blank">Code Pen</a></li>
+                        <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                        <li><a href="https://picsum.photos/" target="_blank">Lorem Picsum Image Placeholder</a></li>
+                    </ul>
+                </div>
 
             </section>
+        
     </main>
     <footer>
-        <span id="currentyear"></span>
-        <p>&copy; 2026 Emmanuel Blas Roberto | Philippines</p>
-
+        
+        <p><span id="currentyear"></span>&copy; Emmanuel Blas Roberto | Philippines</p>
         <p id="lastModified"></p>
         
     </footer>
