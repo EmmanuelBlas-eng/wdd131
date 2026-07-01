@@ -1,0 +1,226 @@
+/* ==========================================
+   1. Global Reset & Typography
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* ==========================================
+   2. Header & Navigation (Flexbox)
+   ========================================== */
+header {
+  background-color: #1b4d75;
+  color: #ffffff;
+  text-align: center;
+}
+
+#course-title {
+  display: block; /* Required to center easily as a block element */
+  font-size: 1.5rem;
+  padding: 15px 0;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  background-color: #2b2b2b;
+}
+
+nav ul {
+  list-style: none;
+  display: flex; /* Mandated Flexbox navigation layout */
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================
+   3. Main Column Layout (CSS Grid)
+   ========================================== */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  /* Mandated: Main layout grid tracks splitting the space 2/3 and 1/3 */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+main h1 {
+  grid-column: 1 / -1; /* Forces user profile heading to span across entire grid width */
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin: 10px 0 20px 0;
+  color: #111111;
+  font-weight: bold;
+}
+
+/* ==========================================
+   4. Component Cards (About Me & Resources)
+   ========================================== */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 8px;
+  overflow: hidden;
+  height: auto;
+}
+
+/* Card Section Headers styling matches photo banner color */
+.card h2 {
+  background-color: #1b557a;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+/* Outer padding for inner content components */
+.card-content {
+  padding: 25px;
+}
+
+/* ==========================================
+   5. About Me Card Layout Block Fixes
+   ========================================== */
+
+/* Top section: houses bio paragraph text alongside profile picture layout */
+.bio-intro {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.bio-intro p {
+  flex: 1;
+  text-align: left;
+}
+
+.bio-intro img {
+  width: 140px;
+  height: auto;
+  border: 1px solid #cccccc;
+}
+
+/* Header overlay text element hiding background line */
+h3 {
+  background-color: #ffffff; /* Matches background canvas color to hide structural line */
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Bottom section: contains side-by-side column flag box layout and text details */
+.location-details {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.flag-box {
+  width: 160px;
+  text-align: center;
+  flex-shrink: 0; /* Prevents container box layout compression */
+}
+
+.flag-box img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+}
+
+.flag-caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-top: 6px;
+  color: #555555;
+}
+
+.location-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* ==========================================
+   6. Resource Card Links Lists
+   ========================================== */
+.resources-list {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card ul {
+  list-style-position: inside;
+  padding: 20px 20px 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.card li {
+  margin-bottom: 12px;
+  color: #0000ee;
+}
+
+.card a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.card a:hover {
+  color: #551a8b;
+}
+
+/* ==========================================
+   7. Footer Section
+   ========================================== */
+footer {
+  background-color: #1b4d75;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 6px 0;
+}
+
+#lastModified {
+  color: #ffff00;
+  font-weight: bold;
+}
