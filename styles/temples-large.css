@@ -1,0 +1,22 @@
+/* Layout overrides for larger devices */
+#menu-button {
+  display: none;
+}
+
+nav {
+  display: flex !important; /* Forces layout tracking on desktop resize */
+  flex-direction: row;
+  width: auto;
+  margin-top: 0;
+  gap: 1rem;
+}
+
+nav a {
+  border-top: none;
+  padding: 0.5rem 1rem;
+}
+
+/* 3-Column Desktop Grid Configuration */
+.grid-container {
+  grid-template-columns: repeat(3, 1fr);
+}
