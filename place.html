@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines - WDD 131</title>
+    <meta name="description" content="An informational page about the Philippines featuring local data and weather metrics.">
+    <meta name="author" content="Emmanuel Blas Roberto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PHILIPPINES</h1>
+    </header>
+
+    <main class="hero-container">
+        <picture class="hero-image">
+            <source srcset="images/philippine-eagle-large.webp" media="(min-width: 600px)">
+            <img src="images/philippine-eagle.webp" alt="Majestic Philippine Eagle" loading="lazy">
+        </picture>
+
+        <section class="data-card">
+            <h2 class="card-heading">Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 300,000 sq km</li>
+                <li><strong>Population:</strong> 117 Million</li>
+                <li><strong>Capital:</strong> Manila</li>
+                <li><strong>Languages:</strong> Filipino, English</li>
+                <li><strong>Currency:</strong> Philippine Peso</li>
+            </ul>
+        </section>
+
+        <section class="weather-card">
+            <h2 class="card-heading">Weather</h2>
+            <div class="weather-icon-box">
+                <img src="images/weather.svg" alt="Cloudy weather icon">
+            </div>
+            <ul>
+                <li><strong>Temperature:</strong> <span><span id="temp">8</span>°C</span></li>
+                <li><strong>Conditions:</strong> <span id="conditions">Partly Cloudy</span></li>
+                <li><strong>Wind:</strong> <span>💨 <span id="wind">5</span> km/h</span></li>
+                <li><strong>Wind Chill:</strong> <span id="windchill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🌴 Emmanuel Blas Roberto 🌴 Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
