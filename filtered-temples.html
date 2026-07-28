@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Emmanuel Blas Roberto">
+    <meta name="author" content="Emmanuel Blas Roberto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="screen and (min-width: 38rem)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="https://www.churchofjesuschrist.org/?lang=eng">
+            <div class="nav-left">
+            <img src="images/Christ-Church-Symbol.webp" alt="The church of JESUS CHRIST of Latter Day Saints logo" class="church-logo" >
+            </div>
+        </a>
+        
+        <h1>Temple Album</h1>
+        <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h1 class="page-title">TEMPLES</h1>
+        <h2 class="sub-title">The Church of JESUS CHRIST of Latter Day Saints</h2>
+        <div class="grid-container">
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Emmanuel Blas Roberto | WDD 130</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- Image Preview Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Temple Preview">
+        </div>
+    </div>
+</body>
+</html>
