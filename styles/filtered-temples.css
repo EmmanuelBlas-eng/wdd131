@@ -127,15 +127,15 @@ main {
   padding: 1.5rem;
 }
 
-main h1,
-h2 {
+main h2,
+h3 {
   text-align: center;
   margin-bottom: 1px;
   font-weight: bold;
   padding-bottom: 1rem;
 }
 
-main h1 {
+main h2 {
   text-decoration: underline;
   text-underline-offset: 6px;
   text-decoration-thickness: 1.5px;
@@ -192,7 +192,6 @@ section img {
     transform 0.3s ease,
     box-shadow 0.3s ease;
   cursor: pointer;
-  
 }
 
 section img:hover {
