@@ -213,7 +213,7 @@ function createTempleCard(filteredTemples) {
     addImagePreviewListeners();
 }
 
-const PLACEHOLDER_SVG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E"
+const PLACEHOLDER_SVG = "data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%201%201%27%3E%3C%2Fsvg%3E"
 
 function addImagePreviewListeners() {
     const modal = document.getElementById('imageModal');
