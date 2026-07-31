@@ -1,0 +1,193 @@
+/* ==========================================================================
+   CSS Variables matching the project's Color Schema
+   ========================================================================== */
+:root {
+  --primary-bg: #1e1e2e;      /* Deep Slate / Editor Background */
+  --card-bg: #282a36;         /* Charcoal Card Background */
+  --text-main: #f8f8f2;       /* Off-White Text */
+  --text-muted: #a9b1d6;      /* Muted Gray Text */
+  --accent-cyan: #80ebd9;     /* Cyan Accent */
+  --accent-purple: #bd93f9;   /* Purple Accent */
+  --accent-green: #50fa7b;    /* Green Highlight */
+  --border-color: #44475a;   /* Subtle Border */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--primary-bg);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: var(--accent-cyan);
+  margin-bottom: 8px;
+}
+
+header p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--accent-purple);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--accent-cyan);
+  margin: 14px 0 6px 0;
+}
+
+p, li {
+  color: var(--text-main);
+  font-size: 0.98rem;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+
+code, pre {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Site Branding Block */
+.branding-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--primary-bg);
+  padding: 16px;
+  border-radius: 6px;
+  border: 1px dashed var(--accent-purple);
+  margin-top: 12px;
+}
+
+.logo-placeholder, img {
+  font-family: 'Fira Code', monospace;
+  font-weight: bold;
+  color: var(--accent-green);
+  font-size: 1.4rem;
+  width: 300px; 
+  height: auto;
+  padding: 0;
+  
+}
+
+
+/* Color Palette Display */
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.color-swatch {
+  padding: 16px;
+  border-radius: 6px;
+  text-align: center;
+  font-family: 'Fira Code', monospace;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typography Section */
+.font-sample-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+}
+
+.font-sample-body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.font-sample-code {
+  font-family: 'Fira Code', monospace;
+  color: var(--accent-green);
+  background-color: #11111b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+/* Wireframes Layout */
+.wireframe-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+  .wireframe-container {
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.wireframe-card {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 16px;
+  text-align: center;
+}
+
+.wireframe-card h4 {
+  margin-bottom: 12px;
+  color: var(--accent-cyan);
+}
+
+svg.wireframe-svg {
+  width: 100%;
+  height: auto;
+  background: #11111b;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}

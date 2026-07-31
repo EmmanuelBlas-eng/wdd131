@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Planning Document</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Emmanuel Blas Roberto">
+    <meta name="author" content="Emmanuel Blas Roberto">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/project/styles/siteplan.css">
+    <script src="/project/scripts/siteplan.js" defer></script>
+    
+</head>
+
+<body>
+
+  <header>
+    <h1>Website Plan: The Modern Dev's Workspace</h1>
+    <p>WDD 131 Final Project Planning Document</p>
+  </header>
+
+  <main>
+
+    <!-- SECTION 1: SITE NAME & BRANDING -->
+    <section>
+      <h2>Site Name</h2>
+      <p><strong>Proposed Site Name:</strong> DevStack Guide</p>
+      <p><strong>Domain Availability (Optional):</strong> <code>devstackguide.dev</code> or <code>devstackguide.io</code></p>
+      
+      <h3>Name Justification</h3>
+      <p>
+        The name "DevStack Guide" was chosen because it cleanly communicates the exact purpose of the site: a modern, practical reference for a developer's environment, extensions, and workflow stack. The <code>.dev</code> domain TLD immediately signifies a developer-focused technical resource.
+      </p>
+
+      <h3>Branding & Logo Representation</h3>
+      <div class="branding-box">
+        <div class="logo-placeholder"> <img src="/project/images/webite-logo.webp" alt="website logo"></div>
+       
+        <div>
+          <p><strong>Logo Concept:</strong> The concept blends the MDW initials into an isometric workspace featuring a multi-monitor developer setup, enclosed in a dynamic circular frame to represent a modern, high-tech engineering environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SITE PURPOSE -->
+    <section>
+      <h2>Site Purpose</h2>
+      <p>
+        <strong>Scope & Goals:</strong> A curated web resource dedicated to optimizing modern code editors like VS Code, keyboard shortcuts,  essential developer extensions, and terminal setups. To help Beginners and intermediate developers looking to boost their productivity and streamline their dev environment
+
+      </p>
+      <ul>
+        <li><strong>Home:</strong> Overview of modern developer productivity principles and a showcase of trending developer tools.</li>
+        <li><strong>Editor Setup:</strong> Recommended VS Code extensions, custom visual themes, and productivity-boosting keybindings tailored for web development.</li>
+        <li><strong>Workflow Tips:</strong> Terminal enhancements (Zsh, Starship, Powerlevel10k), essential Git workflows, and custom snippet management.</li>
+        <li><strong>Interactive Tool:</strong> A dynamic "Shortcut Cheat Sheet Generator" allowing developers to select their OS (macOS/Windows) and editor to generate and filter essential keyboard shortcuts.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 3: SCENARIOS -->
+    <section>
+      <h2>Target Audience Scenarios</h2>
+      <p>These target user questions drive the site structure, interactive features, and content organization:</p>
+      <ul>
+        <li>
+          <strong>Scenario 1 (Beginner Web Developer):</strong> 
+          <em>"I just installed VS Code for my web development bootcamp. What essential extensions and keyboard shortcuts will speed up my HTML/CSS/JS coding without overwhelming me?"</em>
+        </li>
+        <li>
+          <strong>Scenario 2 (Intermediate Developer / Career Switcher):</strong> 
+          <em>"How can I customize my terminal and Git workflow so I can run commands faster and avoid looking up basic Git commands every day?"</em>
+        </li>
+        <li>
+          <strong>Scenario 3 (Productivity Seekers):</strong> 
+          <em>"Can I quickly generate a customized printable or filterable list of VS Code shortcuts specific to my Mac operating system?"</em>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SECTION 4: COLOR SCHEMA -->
+    <section>
+      <h2>Color Schema</h2>
+      <p>
+        The color scheme mirrors a modern code editor dark mode (Dracula/Tokyo Night inspired), creating a familiar, high-contrast, eye-friendly visual style for developers.
+      </p>
+
+      <div class="palette-grid">
+        <div class="color-swatch" style="background-color: #1e1e2e; color: #f8f8f2;">
+          Primary Background<br>#1E1E2E
+        </div>
+        <div class="color-swatch" style="background-color: #282a36; color: #f8f8f2;">
+          Card / Surface<br>#282A36
+        </div>
+        <div class="color-swatch" style="background-color: #80ebd9; color: #11111b;">
+          Cyan Accent (H1/Links)<br>#80EBD9
+        </div>
+        <div class="color-swatch" style="background-color: #bd93f9; color: #11111b;">
+          Purple Accent (H2/Borders)<br>#BD93F9
+        </div>
+        <div class="color-swatch" style="background-color: #50fa7b; color: #11111b;">
+          Green Highlight (Interactive)<br>#50FA7B
+        </div>
+      </div>
+
+      <h3>Application Rules</h3>
+      <ul>
+        <li><strong>Dark Slate (<code>#1E1E2E</code>):</strong> Page background.</li>
+        <li><strong>Charcoal (<code>#282A36</code>):</strong> Content cards, header containers, and navigation bars.</li>
+        <li><strong>Bright Cyan (<code>#80EBD9</code>):</strong> Main title headers, primary links, and visual accents.</li>
+        <li><strong>Soft Purple (<code>#BD93F9</code>):</strong> Section headings (<code>&lt;h2&gt;</code>) and button borders.</li>
+        <li><strong>Neon Green (<code>#50FA7B</code>):</strong> Interactive buttons, active tab states, and snippet code highlights.</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 5: TYPOGRAPHY -->
+    <section>
+      <h2>Typography</h2>
+      <p>Two complementary Google Fonts are specified to balance clean reading with technical code clarity:</p>
+
+      <h3>1. Primary Body & Headings Font: Inter</h3>
+      <p class="font-sample-heading">Inter Bold — Sample Heading (700 weight)</p>
+      <p class="font-sample-body">
+        Inter Regular — Clean, highly legible sans-serif designed for UI readability across mobile and desktop screens. Used for all headings, body paragraphs, and UI labels.
+      </p>
+
+      <h3>2. Code & Technical Accent Font: Fira Code</h3>
+      <p class="font-sample-code">
+        const devTools = ["VS Code", "Terminal", "Git Shortcuts"];
+      </p>
+      <p>
+        <strong>Fira Code </strong> is a free, open-source monospaced font designed for programmers that features special character combinations called ligatures.
+      </p>
+    </section>
+
+    <!-- SECTION 6: WIREFRAMES -->
+    <section>
+      <h2>Home Page Wireframes</h2>
+      <p>Structural layout diagrams representing the home page responsive behavior across Mobile and Desktop screens:</p>
+
+      <div class="wireframe-container">
+        
+        <!-- Mobile View Wireframe -->
+        <div class="wireframe-card">
+          <h4>Mobile View (&lt; 768px)</h4>
+          <svg class="wireframe-svg" viewBox="0 0 200 380" xmlns="http://www.w3.org/2000/svg">
+            <!-- Header / Nav -->
+            <rect x="10" y="10" width="180" height="30" rx="4" fill="#282a36" stroke="#bd93f9" stroke-width="1"/>
+            <text x="20" y="28" fill="#80ebd9" font-size="10" font-family="monospace">"Website Logo"</text>
+            <rect x="160" y="18" width="20" height="14" rx="2" fill="#80ebd9"/>
+
+            <!-- Hero Section -->
+            <rect x="10" y="48" width="180" height="60" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="20" y="70" fill="#f8f8f2" font-size="9" font-weight="bold">Hero Title &amp; Intro</text>
+            <rect x="20" y="80" width="80" height="16" rx="3" fill="#50fa7b"/>
+            <text x="30" y="92" fill="#11111b" font-size="7" font-weight="bold">Explore Tools</text>
+
+            <!-- Featured Cards (Stacked) -->
+            <rect x="10" y="116" width="180" height="65" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="20" y="135" fill="#80ebd9" font-size="9">Editor Setup Card</text>
+            <rect x="20" y="145" width="140" height="6" rx="2" fill="#44475a"/>
+            <rect x="20" y="156" width="100" height="6" rx="2" fill="#44475a"/>
+
+            <rect x="10" y="189" width="180" height="65" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="20" y="208" fill="#80ebd9" font-size="9">Workflow Tips Card</text>
+            <rect x="20" y="218" width="140" height="6" rx="2" fill="#44475a"/>
+            <rect x="20" y="229" width="100" height="6" rx="2" fill="#44475a"/>
+
+            <rect x="10" y="262" width="180" height="65" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="20" y="281" fill="#80ebd9" font-size="9">Shortcut Tool Widget</text>
+            <rect x="20" y="291" width="140" height="6" rx="2" fill="#44475a"/>
+            <rect x="20" y="302" width="100" height="6" rx="2" fill="#44475a"/>
+
+            <!-- Footer -->
+            <rect x="10" y="335" width="180" height="30" rx="4" fill="#282a36"/>
+            <text x="55" y="353" fill="#a9b1d6" font-size="8">&copy; 2026 DevStack Guide</text>
+          </svg>
+        </div>
+
+        <!-- Desktop View Wireframe -->
+        <div class="wireframe-card">
+          <h4>Desktop View (&ge; 768px)</h4>
+          <svg class="wireframe-svg" viewBox="0 0 450 280" xmlns="http://www.w3.org/2000/svg">
+            <!-- Header Nav -->
+            <rect x="10" y="10" width="430" height="30" rx="4" fill="#282a36" stroke="#bd93f9" stroke-width="1"/>
+            <text x="25" y="28" fill="#80ebd9" font-size="11" font-family="monospace">"Website Logo"</text>
+            <text x="220" y="28" fill="#f8f8f2" font-size="9">Home | Editor Setup | Workflow | Shortcuts Tool</text>
+
+            <!-- Hero Section -->
+            <rect x="10" y="48" width="430" height="70" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="30" y="75" fill="#f8f8f2" font-size="12" font-weight="bold">Master Your Modern Developer Workspace</text>
+            <text x="30" y="92" fill="#a9b1d6" font-size="9">Curated setups, extensions, and workflow tips for web developers.</text>
+            <rect x="330" y="68" width="90" height="24" rx="3" fill="#50fa7b"/>
+            <text x="343" y="83" fill="#11111b" font-size="8" font-weight="bold">Get Started</text>
+
+            <!-- 3 Column Feature Grid -->
+            <rect x="10" y="126" width="136" height="105" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="20" y="148" fill="#80ebd9" font-size="10">Editor Setup</text>
+            <rect x="20" y="160" width="100" height="5" rx="2" fill="#44475a"/>
+            <rect x="20" y="170" width="110" height="5" rx="2" fill="#44475a"/>
+            <rect x="20" y="180" width="80" height="5" rx="2" fill="#44475a"/>
+
+            <rect x="157" y="126" width="136" height="105" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="167" y="148" fill="#80ebd9" font-size="10">Workflow Tips</text>
+            <rect x="167" y="160" width="100" height="5" rx="2" fill="#44475a"/>
+            <rect x="167" y="170" width="110" height="5" rx="2" fill="#44475a"/>
+            <rect x="167" y="180" width="80" height="5" rx="2" fill="#44475a"/>
+
+            <rect x="304" y="126" width="136" height="105" rx="4" fill="#282a36" stroke="#44475a"/>
+            <text x="314" y="148" fill="#80ebd9" font-size="10">Interactive Tool</text>
+            <rect x="314" y="160" width="100" height="5" rx="2" fill="#44475a"/>
+            <rect x="314" y="170" width="110" height="5" rx="2" fill="#44475a"/>
+            <rect x="314" y="180" width="80" height="5" rx="2" fill="#44475a"/>
+
+            <!-- Footer -->
+            <rect x="10" y="239" width="430" height="30" rx="4" fill="#282a36"/>
+            <text x="165" y="258" fill="#a9b1d6" font-size="9">&copy; 2026 DevStack Guide — WDD 131 Project</text>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> 2026 | DevStack Guide Website Plan | WDD 131 Project</p>
+        <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
