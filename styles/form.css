@@ -36,9 +36,7 @@ header h1 {
   letter-spacing: 0.5px;
 }
 
-h2 {
-    text-align: center;
-}
+
 
 footer p {
   font-size: 0.85rem;
@@ -219,6 +217,11 @@ textarea {
 .submit-btn:focus {
   outline: 2px solid #2b0320;
   outline-offset: 1px;
+}
+
+
+h2 {
+    text-align: center;
 }
 
 /* ==========================================

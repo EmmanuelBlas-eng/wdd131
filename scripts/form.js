@@ -1,3 +1,7 @@
+
+document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
+
 const products = [
   {
     id: "fc-1888",
@@ -36,5 +40,3 @@ products.forEach(product => {
 });
 
 
-document.getElementById("year").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent = document.lastModified;
