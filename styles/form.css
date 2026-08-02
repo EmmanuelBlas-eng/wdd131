@@ -1,0 +1,237 @@
+/* ==========================================
+   RESET & GLOBAL STYLES
+   ========================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 10px;
+  min-height: 100vh;
+}
+
+/* ==========================================
+   HEADER & FOOTER 
+   ========================================== */
+header,
+footer {
+  width: 100%;
+  max-width: 420px;
+  background-color: #0077C8;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* ==========================================
+   MAIN & FORM CONTAINER (Light Mauve/Grey)
+   ========================================== */
+main {
+  width: 100%;
+  max-width: 420px;
+  background-color: #d6cbd3;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+/* Labels and Legends */
+label,
+legend {
+  font-weight: bold;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+  color: #000000;
+}
+
+.optional {
+  font-weight: bold;
+  font-style: italic;
+  color: #2a3890; /* Matching optional text color */
+  font-size: 0.85rem;
+}
+
+/* ==========================================
+   INPUT FIELDS (Text, Date, Select, Textarea)
+   ========================================== */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #777777;
+  background-color: #ffffff;
+  border-radius: 0;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Focus states for keyboard tab accessibility */
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #2b0320;
+  box-shadow: 0 0 3px #2b0320;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* ==========================================
+   OVERALL RATING (Star Radio Buttons)
+   ========================================== */
+.rating-group {
+  border: none;
+  padding: 0;
+}
+
+.stars-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 4px 0;
+}
+
+.star-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.star-item label {
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.star-item input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #2b0320; /* Color highlight when selected */
+}
+
+/* ==========================================
+   CHECKBOXES (Useful Features)
+   ========================================== */
+.checkbox-group {
+  border: none;
+  padding: 0;
+}
+
+.checkbox-group legend em {
+  font-weight: normal;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 2px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.checkbox-item label {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #2b0320;
+}
+
+/* ==========================================
+   SUBMIT BUTTON
+   ========================================== */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  background-color: #eeeeee;
+  border: 1px solid #777777;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 8px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.submit-btn:active {
+  transform: scale(0.99);
+}
+
+.submit-btn:focus {
+  outline: 2px solid #2b0320;
+  outline-offset: 1px;
+}
+
+/* ==========================================
+   RESPONSIVE ADJUSTMENTS
+   ========================================== */
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  header,
+  main,
+  footer {
+    max-width: 100%;
+  }
+}
